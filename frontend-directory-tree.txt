@@ -1,0 +1,372 @@
+Alkaa-frontend/
+├── public/
+│   ├── assets/
+│   │   ├── logo.svg
+│   │   ├── logo_icon.svg
+│   │   └── react.svg
+│   ├── login_cover.jpg
+│   ├── logo.svg
+│   ├── logo_icon.svg
+│   ├── manifest.json
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   ├── logo.svg
+│   │   ├── logo_icon.svg
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── RouteSecurityWrapper/
+│   │   │   ├── PermissionBasedOnKey.tsx
+│   │   │   └── PermissionRoute.tsx
+│   │   ├── auth/
+│   │   │   ├── MultiTenantLoginForm.tsx
+│   │   │   ├── OTPVerification.tsx
+│   │   │   ├── OrganizationSelector.tsx
+│   │   │   └── ProtectedRoute.tsx
+│   │   ├── charts/
+│   │   │   └── index.ts
+│   │   ├── dashboard/
+│   │   │   └── SpecialEvents.tsx
+│   │   ├── intro/
+│   │   │   ├── CustomerSuccessSection.tsx
+│   │   │   ├── InteractiveDemoSection.tsx
+│   │   │   ├── ProblemSolutionSection.tsx
+│   │   │   └── ProductIntroSection.tsx
+│   │   ├── onboarding/
+│   │   │   ├── CandidateReview.tsx
+│   │   │   ├── CandidateReviewDialog.tsx
+│   │   │   ├── EditCandidateDialog.tsx
+│   │   │   ├── OnboardingForm.tsx
+│   │   │   ├── OnboardingManagement.tsx
+│   │   │   └── RoleSelector.tsx
+│   │   ├── shared/
+│   │   │   └── PermissionGuard.tsx
+│   │   ├── ui/
+│   │   │   ├── NotificationSubscribe.tsx
+│   │   │   ├── NotificationTest.tsx
+│   │   │   ├── accordion.tsx
+│   │   │   ├── alert-dialog.tsx
+│   │   │   ├── alert.tsx
+│   │   │   ├── avatar.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── breadcrumb.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── calendar.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── checkbox.tsx
+│   │   │   ├── collapsible.tsx
+│   │   │   ├── command.tsx
+│   │   │   ├── date-range-picker.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── drawer.tsx
+│   │   │   ├── dropdown-menu.tsx
+│   │   │   ├── form.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── label.tsx
+│   │   │   ├── pagination.tsx
+│   │   │   ├── popover.tsx
+│   │   │   ├── progress.tsx
+│   │   │   ├── radio-group.tsx
+│   │   │   ├── resizable.tsx
+│   │   │   ├── scroll-area.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── separator.tsx
+│   │   │   ├── sheet.tsx
+│   │   │   ├── sidebar.tsx
+│   │   │   ├── skeleton.tsx
+│   │   │   ├── spinner.tsx
+│   │   │   ├── switch.tsx
+│   │   │   ├── table.tsx
+│   │   │   ├── tabs.tsx
+│   │   │   ├── textarea.tsx
+│   │   │   ├── toast.tsx
+│   │   │   ├── toaster.tsx
+│   │   │   ├── toggle-group.tsx
+│   │   │   ├── toggle.tsx
+│   │   │   ├── tooltip.tsx
+│   │   │   └── virtual-list.tsx
+│   │   ├── Attendance.tsx
+│   │   ├── AttendanceList.tsx
+│   │   ├── BankDetails.tsx
+│   │   ├── LazyLocationViewer.tsx
+│   │   ├── Loader.tsx
+│   │   ├── Locationviewer.tsx
+│   │   ├── SidebarFooter.tsx
+│   │   ├── ThemeSwitchButtonComponent.tsx
+│   │   ├── Unauthorized.tsx
+│   │   └── login-form.tsx
+│   ├── constants/
+│   │   └── Domain.ts
+│   ├── hooks/
+│   │   ├── keys/
+│   │   │   ├── holidayKeys.ts
+│   │   │   └── index.ts
+│   │   ├── queries/
+│   │   │   ├── USAGE_GUIDE.md
+│   │   │   ├── attendanceKeys.ts
+│   │   │   ├── authKeys.ts
+│   │   │   ├── employeeKeys.ts
+│   │   │   ├── index.ts
+│   │   │   ├── queryKeys.ts
+│   │   │   ├── useAttendance.ts
+│   │   │   ├── useAuth.ts
+│   │   │   ├── useBilling.ts
+│   │   │   ├── useDepartments.ts
+│   │   │   ├── useEmployees.ts
+│   │   │   ├── useHolidays.ts
+│   │   │   ├── useLeaves.ts
+│   │   │   ├── useNotifications.ts
+│   │   │   ├── useOnboarding.ts
+│   │   │   ├── useOrganizationSettings.ts
+│   │   │   ├── useOrganizations.ts
+│   │   │   ├── usePayroll.ts
+│   │   │   ├── usePermissions.ts
+│   │   │   ├── useProfile.ts
+│   │   │   ├── useRoles.ts
+│   │   │   └── useTasks.ts
+│   │   ├── use-mobile.tsx
+│   │   ├── use-toast.ts
+│   │   ├── useAttendance.ts
+│   │   ├── useDateTimeFormat.ts
+│   │   ├── useDebounce.ts
+│   │   ├── usePayslipPDF.tsx
+│   │   ├── usePermissions.ts
+│   │   └── useTimezone.tsx
+│   ├── lib/
+│   │   ├── queryClient.ts
+│   │   └── utils.ts
+│   ├── pages/
+│   │   ├── private/
+│   │   │   ├── layout/
+│   │   │   │   └── MainLayout.tsx
+│   │   │   ├── system/
+│   │   │   │   ├── ActivityLogManagementSystem/
+│   │   │   │   │   └── ActivityLogsManagement.tsx
+│   │   │   │   ├── AttendanceManagementSystem/
+│   │   │   │   │   ├── AttendanceModule.tsx
+│   │   │   │   │   ├── history.tsx
+│   │   │   │   │   ├── livePanel.tsx
+│   │   │   │   │   ├── panel.tsx
+│   │   │   │   │   ├── pastdays.tsx
+│   │   │   │   │   └── verification.tsx
+│   │   │   │   ├── BillingManagementSystem/
+│   │   │   │   │   ├── BillDetails.tsx
+│   │   │   │   │   ├── BillHistory.tsx
+│   │   │   │   │   ├── BillPayment.tsx
+│   │   │   │   │   ├── BillingDashboard.tsx
+│   │   │   │   │   └── BillingModule.tsx
+│   │   │   │   ├── DepartmentManagementSystem/
+│   │   │   │   │   ├── Create.tsx
+│   │   │   │   │   ├── Edit.tsx
+│   │   │   │   │   ├── List.tsx
+│   │   │   │   │   ├── View.tsx
+│   │   │   │   │   └── index.tsx
+│   │   │   │   ├── EmployeeManagementSystem/
+│   │   │   │   │   ├── CreateEmployeeNew.tsx
+│   │   │   │   │   ├── EmployeeManagement.tsx
+│   │   │   │   │   ├── EmployeeModule.tsx
+│   │   │   │   │   └── RoleAssignment.tsx
+│   │   │   │   ├── HolidayManagementSystem/
+│   │   │   │   │   ├── components/
+│   │   │   │   │   │   ├── AdminView.tsx
+│   │   │   │   │   │   ├── CalendarView.tsx
+│   │   │   │   │   │   └── PolicyView.tsx
+│   │   │   │   │   ├── services/
+│   │   │   │   │   │   ├── holiday.service.ts
+│   │   │   │   │   │   └── holidayType.service.ts
+│   │   │   │   │   ├── types/
+│   │   │   │   │   │   └── holiday.types.ts
+│   │   │   │   │   ├── utils/
+│   │   │   │   │   │   └── holiday.utils.ts
+│   │   │   │   │   └── HolidayDashboard.tsx
+│   │   │   │   ├── LeaveManagementSystem/
+│   │   │   │   │   ├── LeaveBalanceManagementSystem/
+│   │   │   │   │   │   └── view.tsx
+│   │   │   │   │   ├── LeaveRequestManagementSystem/
+│   │   │   │   │   │   ├── Create.tsx
+│   │   │   │   │   │   ├── Edit.tsx
+│   │   │   │   │   │   ├── approve.tsx
+│   │   │   │   │   │   └── list.tsx
+│   │   │   │   │   ├── LeaveTypeManagementSystem/
+│   │   │   │   │   │   ├── Create.tsx
+│   │   │   │   │   │   ├── Edit.tsx
+│   │   │   │   │   │   └── List.tsx
+│   │   │   │   │   ├── LeaveDashboard.tsx
+│   │   │   │   │   └── LeaveModule.tsx
+│   │   │   │   ├── NotificationManagementSystem/
+│   │   │   │   │   ├── ListOfNotification.tsx
+│   │   │   │   │   ├── ListOfNotificationTemplate.tsx
+│   │   │   │   │   └── NotificationTemplateCreate.tsx
+│   │   │   │   ├── OnboardingManagementSystem/
+│   │   │   │   │   └── OnboardingModule.tsx
+│   │   │   │   ├── OrganizationManagementSystem/
+│   │   │   │   │   ├── OrganizationCreate.tsx
+│   │   │   │   │   ├── OrganizationHome.tsx
+│   │   │   │   │   ├── OrganizationModule.tsx
+│   │   │   │   │   └── SpecificOrganizationHome.tsx
+│   │   │   │   ├── PayrollManagementSystem/
+│   │   │   │   │   ├── New_version/
+│   │   │   │   │       ├── AdminLevel/
+│   │   │   │   │       │   ├── GenerateSalary/
+│   │   │   │   │       │   │   ├── ButtonOfGenerateUserSalary.tsx
+│   │   │   │   │       │   │   └── MainGenerateUserSalaryPage.tsx
+│   │   │   │   │       │   ├── Salarytransaction/
+│   │   │   │   │       │   │   ├── ButtonOfUsersSalaryTransaction.tsx
+│   │   │   │   │       │   │   └── MainSalaryUsersTransactionPage.tsx
+│   │   │   │   │       │   ├── ViewPayslipOfAllUsersPayroll/
+│   │   │   │   │       │       ├── ButtonOfViewPayslipOfAlUsersPayroll.tsx
+│   │   │   │   │       │       ├── MainCompOfViewPayslipOfAllUsersPayroll.tsx
+│   │   │   │   │       │       ├── PayslipDetailedView.tsx
+│   │   │   │   │       │       └── alog.txt
+│   │   │   │   │       ├── ManagerLevel/
+│   │   │   │   │       │   ├── GenerateSalary/
+│   │   │   │   │       │   │   ├── ButtonOfGenerateSubordinateSalaryPage.tsx
+│   │   │   │   │       │   │   └── MainGenerateSubordinateSalaryPage.tsx
+│   │   │   │   │       │   ├── Salarytransaction/
+│   │   │   │   │       │   │   ├── ButtonOfSubordinateSalaryTransaction.tsx
+│   │   │   │   │       │   │   └── MainSubordinateSalaryTransactionPage.tsx
+│   │   │   │   │       │   ├── ViewPayslipOfAllSubordinatesPayroll/
+│   │   │   │   │       │       ├── ButtonOfViewPayslipOfAllSubordinatesPayroll.tsx
+│   │   │   │   │       │       └── MainCompOfViewPayslipOfAllSubordinatesPayroll.tsx
+│   │   │   │   │       ├── ui/
+│   │   │   │   │       │   ├── MonthYearPicker.tsx
+│   │   │   │   │       │   ├── PayrollBreadcrumbs.tsx
+│   │   │   │   │       │   ├── PayrollNavigation.tsx
+│   │   │   │   │       │   ├── Payslip.tsx
+│   │   │   │   │       │   ├── PayslipAttendanceTab.tsx
+│   │   │   │   │       │   ├── PayslipDetailsTab.tsx
+│   │   │   │   │       │   ├── PayslipSummaryTab.tsx
+│   │   │   │   │       │   └── PayslipViewer.tsx
+│   │   │   │   │       ├── utils/
+│   │   │   │   │       │   ├── Badgevariant.tsx
+│   │   │   │   │       │   └── PayrollRouteHelper.ts
+│   │   │   │   │       ├── DashboardOfPayroll.tsx
+│   │   │   │   │       └── PayrollModule.tsx
+│   │   │   │   ├── PermissionManagementSystem/
+│   │   │   │   │   ├── PermissionCreate.tsx
+│   │   │   │   │   ├── PermissionHome.tsx
+│   │   │   │   │   ├── PermissionManagementSystem.tsx
+│   │   │   │   │   └── permissionmanagement.txt
+│   │   │   │   ├── Profile/
+│   │   │   │   │   ├── BankDetails.tsx
+│   │   │   │   │   ├── EditProfile.tsx
+│   │   │   │   │   ├── ProfileInfo.tsx
+│   │   │   │   │   ├── ProfileModule.tsx
+│   │   │   │   │   └── SalaryParameter.tsx
+│   │   │   │   ├── RoleManagementSystem/
+│   │   │   │   │   ├── ModernRolePermissionManager.tsx
+│   │   │   │   │   ├── ModernRolePermissionPage.tsx
+│   │   │   │   │   ├── PermissionPresetManager.tsx
+│   │   │   │   │   └── RoleManagementDashboard.tsx
+│   │   │   │   ├── SpecificOrganizationManagementSystem/
+│   │   │   │   │   ├── components/
+│   │   │   │   │   │   ├── AllUsersTab.tsx
+│   │   │   │   │   │   ├── DepartmentsTab.tsx
+│   │   │   │   │   │   ├── InsightsTab.tsx
+│   │   │   │   │   │   ├── OrganizationChartTab.tsx
+│   │   │   │   │   │   ├── OrganizationHeader.tsx
+│   │   │   │   │   │   ├── TeamTab.tsx
+│   │   │   │   │   │   └── index.ts
+│   │   │   │   │   ├── types/
+│   │   │   │   │   │   └── index.ts
+│   │   │   │   │   ├── ClientOrganizationModule.tsx
+│   │   │   │   │   ├── OrganizationSettings.tsx
+│   │   │   │   │   └── View.tsx
+│   │   │   │   ├── SystemManagement/
+│   │   │   │   │   └── SystemModule.tsx
+│   │   │   │   ├── TaskManagementSystem/
+│   │   │   │       ├── components/
+│   │   │   │       │   ├── CreateGroupDialog.tsx
+│   │   │   │       │   ├── CreateTaskDialog.tsx
+│   │   │   │       │   ├── EditTaskDialog.tsx
+│   │   │   │       │   ├── EnhancedMemberManagement.tsx
+│   │   │   │       │   ├── GroupDetailsDialog.tsx
+│   │   │   │       │   ├── GroupMembershipCard.tsx
+│   │   │   │       │   ├── ManageMembersDialog.tsx
+│   │   │   │       │   ├── TaskChatView.tsx
+│   │   │   │       │   └── TaskStatsCards.tsx
+│   │   │   │       ├── services/
+│   │   │   │       │   ├── taskGroupMemberService.ts
+│   │   │   │       │   └── taskGroupService.ts
+│   │   │   │       ├── utils/
+│   │   │   │       │   └── memberManagementUtils.ts
+│   │   │   │       ├── Dashboard.tsx
+│   │   │   │       ├── EmployeeView.tsx
+│   │   │   │       ├── GroupView.tsx
+│   │   │   │       ├── TaskGroupDetails.tsx
+│   │   │   │       ├── TaskGroupList.tsx
+│   │   │   │       ├── TaskView.tsx
+│   │   │   │       ├── UserView.tsx
+│   │   │   │       └── index.tsx
+│   │   │   ├── Home.tsx
+│   │   │   └── Logout.tsx
+│   │   ├── public/
+│   │       ├── auth/
+│   │       │   └── SignIn.tsx
+│   │       ├── intro/
+│   │       │   └── concept.txt
+│   │       ├── DashboardPreview.tsx
+│   │       ├── LandingPage.tsx
+│   │       ├── PrivacyPolicyPage.tsx
+│   │       └── SetPassword.tsx
+│   ├── providers/
+│   │   ├── AuthContext.tsx
+│   │   └── ThemeProvider.tsx
+│   ├── routes/
+│   │   └── RouteDict.ts
+│   ├── services/
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   └── authApi.ts
+│   │   │   ├── employees/
+│   │   │   │   └── employeesApi.ts
+│   │   │   ├── v2/
+│   │   │   │   ├── APIdict.ts
+│   │   │   │   └── Api2Dicts.ts
+│   │   │   ├── v3/
+│   │   │   │   └── Api3Dicts.ts
+│   │   │   ├── attendanceApi.ts
+│   │   │   ├── holidayApi.ts
+│   │   │   ├── index.ts
+│   │   │   └── permissionsApi.ts
+│   │   ├── Cloudinary.tsx
+│   │   ├── NotificationService.ts
+│   │   ├── OlaMap.tsx
+│   │   └── PermissionCheck.ts
+│   ├── store/
+│   │   ├── atom.ts
+│   │   └── toast.ts
+│   ├── styles/
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── types/
+│   │   ├── attendance.ts
+│   │   ├── auth.ts
+│   │   ├── bankDetails.ts
+│   │   ├── employees.ts
+│   │   ├── general.ts
+│   │   ├── holiday.types.ts
+│   │   ├── index.ts
+│   │   ├── salary.ts
+│   │   └── salaryParameters.ts
+│   ├── utils/
+│   │   ├── authTestUtils.ts
+│   │   ├── notificationUtil.ts
+│   │   ├── payslipPDFGenerator.ts
+│   │   ├── routeUtils.ts
+│   │   └── timeUtils.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── README.md
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vercel.json
+└── vite.config.ts

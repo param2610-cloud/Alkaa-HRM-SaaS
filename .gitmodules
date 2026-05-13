@@ -1,0 +1,6 @@
+[submodule "Alkaa-frontend"]
+	path = Alkaa-frontend
+	url = https://github.com/sapmate-official/Alkaa-frontend.git
+[submodule "alkaa-backend"]
+	path = alkaa-backend
+	url = https://github.com/sapmate-official/alkaa-backend.git
