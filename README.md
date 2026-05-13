@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/logo.svg" alt="Alkaa Logo" width="220"/>
+  <img src="./logo.svg" alt="Alkaa Logo" width="220"/>
 
 # ALKAA - HR Management System
 
